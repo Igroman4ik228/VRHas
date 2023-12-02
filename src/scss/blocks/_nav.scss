@@ -1,0 +1,31 @@
+nav {
+    .list {
+        display: flex;
+
+        .item:not(:first-child) {
+            margin-left: 64px;
+        }
+
+        .special {
+            display: flex;
+
+            &:last-child {
+                margin-left: 60px;
+            }
+
+            .arrow {
+                padding: 4px;
+                transition: transform 0.3s;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    transform: rotateX(3.142rad);
+                }
+
+            }
+        }
+    }
+
+
+}

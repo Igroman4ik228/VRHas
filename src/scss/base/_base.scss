@@ -1,0 +1,16 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	font-size: 16px;
+
+}
+
+.wrapper {
+	overflow: hidden;
+	background: url(../img/bg-img.svg) no-repeat right top;
+}
