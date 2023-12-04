@@ -10,14 +10,63 @@
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
 
+
+
 <body>
+
+	<!-- Preloader -->
+	<div id="preloader" class="preloader preloader--hide">
+		<div class="preloader__loader">
+			<div class="loadingio-spinner-rolling-nibafivij09">
+				<div class="ldio-icb6us5mc9">
+					<div></div>
+				</div>
+			</div>
+
+			<span class="preloader__percents">
+				<span id="percents">0</span>%
+			</span>
+		</div>
+	</div>
+
 	<div class="wrapper">
 		@@include('blocks/header.html')
 		<main class="main">
-			<!-- @@include('blocks/section!!!.html') -->
+			<section class="home">
+				<div class="container">
+					<div class="top">
+						<h1 class="title">Immerse Yourself in Virtual Reality</h1>
+						<p class="text">Experience Unforgettable Events in VR. Bring your events to life like never
+							before
+							with our VR
+							services</p>
+						<a href="#">discover more</a>
+						<div class="happy-clients">
+							<img src="./img/client-home1.png" alt="client1">
+							<img src="./img/client-home2.png" alt="client2">
+							<img src="./img/client-home3.png" alt="client3">
+							<p class="text"><span>32k+</span> Happy Client</p>
+							<button class="play-video">
+								<img src="./img/play-button.svg" alt="play-button">
+								<img src="./img/video-home.png" alt="play-video-img">
+							</button>
+						</div>
+						<img src="./img/man-home.png" alt="man-home">
+					</div>
+
+
+
+
+
+					<div class="cards">
+
+					</div>
+				</div>
+			</section>
 		</main>
 		@@include('blocks/footer.html')
 	</div>
+	<script src="./js/indexPreloader.bundle.js"></script>
 	<script src="./js/index.bundle.js"></script>
 </body>
 
