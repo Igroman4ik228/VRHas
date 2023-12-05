@@ -1,9 +1,8 @@
 @font-face {
     font-family: 'Chakra Petch';
-    font-display: swap;
+    font-display: block;
     src: url('ChakraPetch-Medium.eot');
     src: local('Chakra Petch Medium'), local('ChakraPetch-Medium'),
-        url('ChakraPetch-Medium.eot?#iefix') format('embedded-opentype'),
         url('ChakraPetch-Medium.woff2') format('woff2'),
         url('ChakraPetch-Medium.woff') format('woff'),
         url('ChakraPetch-Medium.ttf') format('truetype');
@@ -15,7 +14,6 @@
     font-family: 'Chakra Petch';
     src: url('ChakraPetch-Regular.eot');
     src: local('Chakra Petch Regular'), local('ChakraPetch-Regular'),
-        url('ChakraPetch-Regular.eot?#iefix') format('embedded-opentype'),
         url('ChakraPetch-Regular.woff2') format('woff2'),
         url('ChakraPetch-Regular.woff') format('woff'),
         url('ChakraPetch-Regular.ttf') format('truetype');
@@ -28,7 +26,6 @@
     font-family: 'Chakra Petch';
     src: url('ChakraPetch-Light.eot');
     src: local('Chakra Petch Light'), local('ChakraPetch-Light'),
-        url('ChakraPetch-Light.eot?#iefix') format('embedded-opentype'),
         url('ChakraPetch-Light.woff2') format('woff2'),
         url('ChakraPetch-Light.woff') format('woff'),
         url('ChakraPetch-Light.ttf') format('truetype');
@@ -40,7 +37,6 @@
     font-family: 'Chakra Petch';
     src: url('ChakraPetch-Bold.eot');
     src: local('Chakra Petch Bold'), local('ChakraPetch-Bold'),
-        url('ChakraPetch-Bold.eot?#iefix') format('embedded-opentype'),
         url('ChakraPetch-Bold.woff2') format('woff2'),
         url('ChakraPetch-Bold.woff') format('woff'),
         url('ChakraPetch-Bold.ttf') format('truetype');
@@ -52,7 +48,6 @@
     font-family: 'Chakra Petch';
     src: url('ChakraPetch-SemiBold.eot');
     src: local('Chakra Petch SemiBold'), local('ChakraPetch-SemiBold'),
-        url('ChakraPetch-SemiBold.eot?#iefix') format('embedded-opentype'),
         url('ChakraPetch-SemiBold.woff2') format('woff2'),
         url('ChakraPetch-SemiBold.woff') format('woff'),
         url('ChakraPetch-SemiBold.ttf') format('truetype');

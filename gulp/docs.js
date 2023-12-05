@@ -3,7 +3,7 @@ const gulp = require('gulp');
 // HTML
 const fileInclude = require('gulp-file-include');
 const htmlclean = require('gulp-htmlclean');
-const webpHTML = require('gulp-webp-html');
+const webpHTML = require('gulp-webp-html-nosvg');
 
 // SASS
 const sass = require('gulp-sass')(require('sass'));
