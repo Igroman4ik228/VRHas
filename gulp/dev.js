@@ -14,6 +14,7 @@ const changed = require('gulp-changed'); // Checking for changes
 
 
 
+
 // Tasks
 gulp.task('clean:dev', function (done) {
 	if (fs.existsSync('./build/')) {

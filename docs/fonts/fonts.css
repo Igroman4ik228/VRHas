@@ -12,6 +12,7 @@
 
 @font-face {
     font-family: 'Chakra Petch';
+    font-display: block;
     src: url('ChakraPetch-Regular.eot');
     src: local('Chakra Petch Regular'), local('ChakraPetch-Regular'),
         url('ChakraPetch-Regular.woff2') format('woff2'),
@@ -24,6 +25,7 @@
 
 @font-face {
     font-family: 'Chakra Petch';
+    font-display: block;
     src: url('ChakraPetch-Light.eot');
     src: local('Chakra Petch Light'), local('ChakraPetch-Light'),
         url('ChakraPetch-Light.woff2') format('woff2'),
@@ -35,6 +37,7 @@
 
 @font-face {
     font-family: 'Chakra Petch';
+    font-display: block;
     src: url('ChakraPetch-Bold.eot');
     src: local('Chakra Petch Bold'), local('ChakraPetch-Bold'),
         url('ChakraPetch-Bold.woff2') format('woff2'),
@@ -46,6 +49,7 @@
 
 @font-face {
     font-family: 'Chakra Petch';
+    font-display: block;
     src: url('ChakraPetch-SemiBold.eot');
     src: local('Chakra Petch SemiBold'), local('ChakraPetch-SemiBold'),
         url('ChakraPetch-SemiBold.woff2') format('woff2'),

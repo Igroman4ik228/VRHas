@@ -10,4 +10,9 @@
 @import "./blocks/*.scss";
 
 
+.wrapper {
+    overflow: hidden;
+    background: url(../img/bg-img.png) no-repeat right top;
+}
+
 .home {}
