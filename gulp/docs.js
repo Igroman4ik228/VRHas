@@ -92,12 +92,12 @@ gulp.task('images:docs', function () {
 		.pipe(gulp.dest('./docs/img/'));
 });
 
-gulp.task('fonts:docs', function () {
-	return gulp
-		.src('./src/fonts/**/*')
-		.pipe(changed('./docs/fonts/'))
-		.pipe(gulp.dest('./docs/fonts/'));
-});
+// gulp.task('fonts:docs', function () {
+// 	return gulp
+// 		.src('./src/fonts/**/*')
+// 		.pipe(changed('./docs/fonts/'))
+// 		.pipe(gulp.dest('./docs/fonts/'));
+// });
 
 gulp.task('files:docs', function () {
 	return gulp
