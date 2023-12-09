@@ -72,8 +72,8 @@ gulp.task('sass:docs', function () {
 		.pipe(sourceMaps.init())
 		.pipe(autoprefixer())
 		.pipe(sassGlob())
-		.pipe(webpCss())
-		.pipe(groupMedia())
+		// .pipe(webpCss())
+		// .pipe(groupMedia())
 		.pipe(sass())
 		.pipe(csso())
 		.pipe(sourceMaps.write())
@@ -92,12 +92,12 @@ gulp.task('images:docs', function () {
 		.pipe(gulp.dest('./docs/img/'));
 });
 
-// gulp.task('fonts:docs', function () {
-// 	return gulp
-// 		.src('./src/fonts/**/*')
-// 		.pipe(changed('./docs/fonts/'))
-// 		.pipe(gulp.dest('./docs/fonts/'));
-// });
+gulp.task('fonts:docs', function () {
+	return gulp
+		.src('./src/fonts/**/*')
+		.pipe(changed('./docs/fonts/'))
+		.pipe(gulp.dest('./docs/fonts/'));
+});
 
 gulp.task('files:docs', function () {
 	return gulp
@@ -116,11 +116,11 @@ gulp.task('js:docs', function () {
 		.pipe(gulp.dest('./docs/js/'));
 });
 
-const serverOptions = {
-	livereload: true,
-	open: true,
-};
 
 gulp.task('server:docs', function () {
-	return gulp.src('./docs/').pipe(server(serverOptions));
+	return gulp.src('./docs/').pipe(server({
+		port: "8080",
+		livereload: true,
+		open: true
+	}));
 });

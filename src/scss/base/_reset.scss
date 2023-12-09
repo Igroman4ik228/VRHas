@@ -18,6 +18,7 @@ a:link,
 a:visited {
 	text-decoration: none;
 	color: var(--text-color);
+	display: inline-block;
 }
 
 a:hover {

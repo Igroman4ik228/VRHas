@@ -9,10 +9,119 @@
 /* Blocks */
 @import "./blocks/*.scss";
 
-
-.wrapper {
+body>.wrapper {
     overflow: hidden;
     background: url(../img/index/home/bg-img.png) no-repeat right top;
 }
 
-.home {}
+.home {
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        &>.wrapper {
+
+            .title {
+                font-size: 64px;
+                font-weight: 600;
+                letter-spacing: -0.32px;
+                max-width: 540px;
+            }
+
+            .text {
+                margin-top: 12px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 28px;
+                max-width: 540px;
+            }
+
+            .btn {
+                margin-top: 32px;
+                padding: 18px 38px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                background-image: var(--accent-gradient);
+                max-width: 540px;
+            }
+
+            .happy-clients {
+
+                margin-top: 42px;
+                display: flex;
+                align-items: center;
+
+                &>.clients-img .item {
+                    border-radius: 50%;
+                    border: 0.788px solid #18181B;
+                    width: 50px;
+                    height: 50px;
+
+                }
+
+                &>.clients-img .item2,
+                &>.clients-img .item3 {
+                    margin-left: -12px;
+                }
+
+                .text {
+                    margin-left: 18px;
+                    color: #D1D1D1;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 28px;
+
+                    &>span {
+                        color: var(--greyscale-white, #FFF);
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        position: relative;
+
+                        &::before {
+                            content: url(../img/index/home/underline.svg);
+                            position: absolute;
+                            left: -5px;
+                            top: 3px;
+                        }
+                    }
+                }
+
+                .play-video {
+                    margin-left: 74px;
+                    width: 196px;
+                    height: 126px;
+                    position: relative;
+                    background-color: #21232E;
+
+                    &>.play {
+                        position: absolute;
+                        left: 85px;
+                        top: 49px;
+                    }
+                }
+            }
+        }
+
+        .vr-man-wrapper {
+            position: relative;
+
+            .light {
+                position: absolute;
+                left: -15px;
+                top: 200px;
+                z-index: 1;
+                filter: blur(105px);
+            }
+
+            .vr-man {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}
