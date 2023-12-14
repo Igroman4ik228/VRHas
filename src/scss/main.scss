@@ -125,3 +125,99 @@ body>.wrapper {
         }
     }
 }
+
+.why-choose-us {
+    .container>.wrapper {
+        display: flex;
+        padding: 42px 64px 53px 64px;
+        background-color: #252532;
+        border: 1px solid rgba(#FFF, 0.2);
+
+        .advantage {
+            max-width: 324px;
+
+            &:not(:first-child) {
+                margin-left: 50px;
+            }
+
+            &>.title {
+                margin-top: 42px;
+                font-size: 20px;
+            }
+
+            &>.text {
+                margin-top: 12px;
+                font-size: 14px;
+                line-height: 28px;
+                color: #B0B0B2;
+            }
+        }
+
+    }
+}
+
+.about-us {
+    .container>.wrapper {
+        display: flex;
+
+        &>.media {}
+
+        &>.content {
+            max-width: 562px;
+
+            .title {
+                background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 2.24px;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+
+            .subtitle {
+                margin-top: 12px;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 58px;
+                letter-spacing: -0.24px;
+            }
+
+            .text {
+                margin-top: 12px;
+                font-weight: 300;
+                line-height: 28px;
+            }
+
+            .check-boxs {
+                margin-top: 24px;
+
+                .check-box {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin-left: 12px;
+                    }
+
+                    &:not(:first-child) {
+                        margin-top: 14px;
+                    }
+                }
+            }
+
+            .link {
+                margin-top: 32px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                background: var(--accent-gradient);
+                padding: 18px 38px;
+            }
+        }
+    }
+}
