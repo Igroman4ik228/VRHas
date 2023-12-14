@@ -11,16 +11,33 @@
 
 body>.wrapper {
     overflow: hidden;
-    background: url(../img/index/home/bg-img.png) no-repeat right top;
+    background: url(../img/index/bg-img.png) no-repeat right top;
 }
 
 .home {
+    margin-top: 12px;
+    position: relative;
 
-    .top {
+    &::after {
+        content: url(../img/index/svg/grid-home.svg);
+        position: absolute;
+        left: 0;
+        top: 143px;
+        z-index: 1;
+    }
+
+
+    .wrapper {
         display: flex;
         justify-content: space-between;
 
-        &>.wrapper {
+
+        &>.content {
+            margin-top: 74px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 2;
 
             .title {
                 font-size: 64px;
@@ -31,10 +48,11 @@ body>.wrapper {
 
             .text {
                 margin-top: 12px;
+                max-width: 446px;
+                color: #D1D1D1;
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 28px;
-                max-width: 540px;
             }
 
             .btn {
@@ -47,10 +65,10 @@ body>.wrapper {
                 text-transform: uppercase;
                 background-image: var(--accent-gradient);
                 max-width: 540px;
+
             }
 
             .happy-clients {
-
                 margin-top: 42px;
                 display: flex;
                 align-items: center;
@@ -83,7 +101,7 @@ body>.wrapper {
                         position: relative;
 
                         &::before {
-                            content: url(../img/index/home/underline.svg);
+                            content: url(../img/index/svg/underline.svg);
                             position: absolute;
                             left: -5px;
                             top: 3px;
@@ -98,6 +116,7 @@ body>.wrapper {
                     position: relative;
                     background-color: #21232E;
 
+
                     &>.play {
                         position: absolute;
                         left: 85px;
@@ -107,7 +126,7 @@ body>.wrapper {
             }
         }
 
-        .vr-man-wrapper {
+        .vr-man {
             position: relative;
 
             .light {
@@ -127,6 +146,9 @@ body>.wrapper {
 }
 
 .why-choose-us {
+    position: relative;
+    z-index: 2;
+
     .container>.wrapper {
         display: flex;
         padding: 42px 64px 53px 64px;
@@ -158,9 +180,40 @@ body>.wrapper {
 
 .about-us {
     .container>.wrapper {
+        margin-top: 120px;
         display: flex;
+        justify-content: space-between;
 
-        &>.media {}
+        &>.media {
+            .vr-man {
+                position: relative;
+
+                .vr-man-img {
+                    position: relative;
+                    z-index: 3;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 1px;
+                    top: 1px;
+                    z-index: 2;
+                }
+
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: #252532;
+                    width: 398px;
+                    height: 496px;
+                    left: 0;
+                    top: 127px;
+                    z-index: 1;
+                }
+            }
+        }
 
         &>.content {
             max-width: 562px;
