@@ -4,6 +4,10 @@ nav {
         font-weight: 300;
         line-height: 28px;
 
+        .active {
+            font-weight: 500;
+        }
+
         .item:not(:first-child) {
             margin-left: 64px;
         }

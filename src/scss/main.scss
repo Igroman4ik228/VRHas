@@ -152,8 +152,7 @@ body>.wrapper {
     .container>.wrapper {
         display: flex;
         padding: 42px 64px 53px 64px;
-        background-color: #252532;
-        border: 1px solid rgba(#FFF, 0.2);
+        background: linear-gradient(#252532, #252532) 50% 50%/calc(100% - 2px) calc(100% - 2px) no-repeat, linear-gradient(90deg, rgba(255, 255, 255, .3) 0, transparent 100%);
 
         .advantage {
             max-width: 324px;
@@ -185,6 +184,8 @@ body>.wrapper {
         justify-content: space-between;
 
         &>.media {
+            position: relative;
+
             .vr-man {
                 position: relative;
 
@@ -208,9 +209,26 @@ body>.wrapper {
                     background-color: #252532;
                     width: 398px;
                     height: 496px;
-                    left: 0;
-                    top: 127px;
+                    left: -23px;
+                    top: 126px;
                     z-index: 1;
+                }
+            }
+
+            .play-video {
+                background-color: #252532;
+                position: absolute;
+                width: 196px;
+                height: 128px;
+                right: 13px;
+                bottom: 0;
+                z-index: 3;
+
+                &::after {
+                    content: url(../img/index/svg/play-button.svg);
+                    position: absolute;
+                    left: 81px;
+                    top: 50px;
                 }
             }
         }
@@ -240,8 +258,10 @@ body>.wrapper {
 
             .text {
                 margin-top: 12px;
+                color: #D1D1D1;
                 font-weight: 300;
                 line-height: 28px;
+
             }
 
             .check-boxs {
